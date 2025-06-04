@@ -246,38 +246,21 @@ These two extra-steps have been embedded in a demo for a UDRL.
 ## List of APIs Tested for LdrShuffle
 
 `VirtualAlloc`
+
 `VirtualProtect`
+
 `CreateThread`
+
 `Sleep`
+
 `MessageBoxA`
+
 `InternetOpenW` (needs to run with `createThread = 1`)
+
 `InternetOpenUrlA` (needs to run with `createThread = 1`)
-
-
-## List of Target Processes Tested for LdrInject
-
-msedge.exe
-firefox.exe
-chrome.exe
-powershell.exe
-notepad.exe
-code.exe
-sublime.exe
-javaw.exe
-
-Instability or crashes observed:
-
-explorer.exe
-
-Failed:
-
-python.exe
-
-## EDR
 
 # TODO
 
 - Continue testing more APIs for the LdrShuffle
-- Debug why injection in python.exe fails and is unstable in explorer.exe
 
 
